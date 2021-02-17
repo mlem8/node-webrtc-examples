@@ -11,8 +11,8 @@ const { mount } = require('./lib/server/rest/connectionsapi');
 const WebRtcConnectionManager = require('./lib/server/connections/webrtcconnectionmanager');
 
 const ssl = {
-  // cert: readFileSync('/home/pi/server.crt'), 
-  // key: readFileSync('/home/pi/server.key'),
+  cert: readFileSync('/home/pi/server.crt'), 
+  key: readFileSync('/home/pi/server.key'),
 };
 const app = express();
 
