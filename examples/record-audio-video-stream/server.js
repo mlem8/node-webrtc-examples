@@ -7,8 +7,11 @@ const Speaker = require('speaker');
 const speaker = new Speaker({
   channels: 1,
   bitDepth: 16,
-  sampleRate: 48000
+  sampleRate: 48000,
+  device: 'hw:1,0',
 });
+// 'hw:0,0' = HDMI
+// 'hw:1,0' = 3.5mm
 
 function beforeOffer(peerConnection) {
   const audioTransceiver = peerConnection.addTransceiver('audio');
