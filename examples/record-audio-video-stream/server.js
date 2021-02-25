@@ -10,7 +10,7 @@ const speaker = new Speaker({
   sampleRate: 48000,
   device: 'hw:1,0',
 });
-// 'hw:0,0' = HDMI
+// 'hw:0,0' = HDMIxxx
 // 'hw:1,0' = 3.5mm
 
 function beforeOffer(peerConnection) {
