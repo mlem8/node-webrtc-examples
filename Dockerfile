@@ -10,5 +10,7 @@ ADD html html
 ADD lib lib
 ADD *.js* ./
 
+ENV SERIAL_PORT /dev/ttyUSB0
+
 RUN npm install --production
 ENTRYPOINT ["node", "index.js"]
