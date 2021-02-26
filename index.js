@@ -35,6 +35,8 @@ function setupExample(example) {
   return connectionManager;
 }
 
+app.use('/api', require('./api'));
+
 app.get('/', (req, res) => res.redirect(`${examples[0]}/index.html`));
 
 const connectionManagers = examples.reduce((connectionManagers, example) => {
